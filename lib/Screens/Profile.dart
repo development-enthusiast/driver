@@ -3,7 +3,6 @@ import 'package:driverapp/Widgets/Documents.dart';
 import 'package:driverapp/Widgets/YourDetails.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:rating_bar/rating_bar.dart';
 
 class Profile extends StatefulWidget {
   @override
