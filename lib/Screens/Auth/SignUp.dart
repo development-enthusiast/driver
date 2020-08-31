@@ -1,4 +1,5 @@
 import 'package:driverapp/Classes/Constants.dart';
+import 'package:driverapp/Screens/Profile.dart';
 import 'package:flutter/material.dart';
 
 class SignUp extends StatefulWidget {
@@ -198,7 +199,14 @@ class _SignUpState extends State<SignUp> {
               ),
               Spacer(),
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Profile(),
+                    ),
+                  );
+                },
                 child: Container(
                   width: pWidth * 0.85,
                   height: pHeight * 0.065,
