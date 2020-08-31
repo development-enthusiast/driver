@@ -1,5 +1,5 @@
 import 'package:driverapp/Classes/Constants.dart';
-import 'package:driverapp/Screens/AccountSummary/AccountSummaryMain.dart';
+import 'package:driverapp/Screens/AllTrips/AllTrips.dart';
 import 'package:flutter/material.dart';
 
 class SignUp extends StatefulWidget {
@@ -203,7 +203,7 @@ class _SignUpState extends State<SignUp> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => AccountSummaryMain(),
+                      builder: (context) => AllTrips(),
                     ),
                   );
                 },
