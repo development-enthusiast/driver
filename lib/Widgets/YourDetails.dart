@@ -65,6 +65,7 @@ class _YourDetailsState extends State<YourDetails> {
                       size: widget.pHeight * 0.035,
                       color: CupertinoColors.black.withOpacity(0.65),
                     ),
+                    onPressed: () {},
                   ),
                   SizedBox(
                     height: widget.pHeight * 0.04,

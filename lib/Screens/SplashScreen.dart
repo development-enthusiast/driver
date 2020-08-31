@@ -8,6 +8,7 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
+  // ignore: must_call_super
   void initState() {
     new Future.delayed(Duration(seconds: 3), () {
       Navigator.pushReplacement(
