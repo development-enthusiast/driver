@@ -1,5 +1,6 @@
 import 'package:driverapp/Screens/SplashScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:driverapp/Screens/Auth/VehicleDetails.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: SplashScreen(),
+      home: VehicleDetails(),
     );
   }
 }
