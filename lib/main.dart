@@ -1,3 +1,5 @@
+import 'package:driverapp/Screens/Auth/DocumentsSubmit.dart';
+import 'package:driverapp/Screens/Profile.dart';
 import 'package:driverapp/Screens/SplashScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -10,11 +12,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
-      home: SplashScreen(),
-    );
+        title: 'Flutter Demo',
+        theme: ThemeData(
+          visualDensity: VisualDensity.adaptivePlatformDensity,
+        ),
+        home: SplashScreen());
   }
 }

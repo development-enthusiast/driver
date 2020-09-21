@@ -78,7 +78,7 @@ class _YourDetailsState extends State<YourDetails> {
                         fontSize: widget.pHeight * 0.02),
                   ),
                   SizedBox(
-                    height: widget.pHeight * 0.02,
+                    height: widget.pHeight * 0.01,
                   ),
                   RatingBar.readOnly(
                     filledColor: Colors.yellow,
@@ -247,7 +247,7 @@ class _YourDetailsState extends State<YourDetails> {
                     ],
                   ),
                   SizedBox(
-                    width: widget.pWidth * 0.2,
+                    width: widget.pWidth * 0.1,
                   ),
                   Column(
                     children: <Widget>[

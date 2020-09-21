@@ -1,6 +1,7 @@
 import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/material.dart';
 import 'CustomRadio.dart';
+import 'UploadDocuments.dart';
 
 class VehicleDetails extends StatefulWidget {
   @override
@@ -255,7 +256,7 @@ class _VehicleDetailsState extends State<VehicleDetails> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                          builder: (context) => VehicleDetails(),
+                          builder: (context) => UploadDocuments(),
                         ),
                       );
                     },
