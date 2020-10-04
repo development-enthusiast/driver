@@ -27,7 +27,6 @@ class _ProfileState extends State<Profile> {
                   'Profile',
                   style: TextStyle(
                     color: CupertinoColors.white,
-                    fontFamily: 'Roboto',
                     fontSize: pHeight * 0.025,
                   ),
                 ),
@@ -35,8 +34,7 @@ class _ProfileState extends State<Profile> {
             ),
           ],
           bottom: TabBar(
-            labelStyle:
-                TextStyle(fontFamily: 'Roboto', fontSize: pHeight * 0.02),
+            labelStyle: TextStyle(fontSize: pHeight * 0.02),
             labelColor: kAccentColor,
             unselectedLabelColor: Colors.white,
             indicatorColor: kAccentColor,

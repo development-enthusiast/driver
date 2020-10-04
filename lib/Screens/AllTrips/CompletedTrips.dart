@@ -81,7 +81,6 @@ class CompletedTripCollapsed extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.black,
                       fontSize: pHeight * 0.018,
-                      fontFamily: 'Roboto',
                       fontWeight: FontWeight.bold),
                 ),
                 Row(
@@ -91,7 +90,6 @@ class CompletedTripCollapsed extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: pHeight * 0.018,
-                        fontFamily: 'Roboto',
                       ),
                     ),
                     Text(
@@ -99,7 +97,6 @@ class CompletedTripCollapsed extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: pHeight * 0.018,
-                          fontFamily: 'Roboto',
                           fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
@@ -110,7 +107,6 @@ class CompletedTripCollapsed extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: pHeight * 0.018,
-                        fontFamily: 'Roboto',
                       ),
                     ),
                     Text(
@@ -118,7 +114,6 @@ class CompletedTripCollapsed extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: pHeight * 0.018,
-                          fontFamily: 'Roboto',
                           fontWeight: FontWeight.bold),
                     ),
                   ],
@@ -130,7 +125,6 @@ class CompletedTripCollapsed extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: pHeight * 0.018,
-                        fontFamily: 'Roboto',
                       ),
                     ),
                     RatingBar.readOnly(
@@ -211,7 +205,6 @@ class CompletedTripExpanded extends StatelessWidget {
                 'Trips Summary',
                 style: TextStyle(
                   color: CupertinoColors.white,
-                  fontFamily: 'Roboto',
                   fontSize: pHeight * 0.025,
                 ),
               ),
@@ -486,14 +479,12 @@ class CompletedTripExpanded extends StatelessWidget {
                     'Payment Mode',
                     style: TextStyle(
                         color: Colors.black.withOpacity(0.75),
-                        fontFamily: 'Roboto',
                         fontSize: pHeight * 0.025),
                   ),
                   Text(
                     'Cash',
                     style: TextStyle(
                         color: Colors.black.withOpacity(0.75),
-                        fontFamily: 'Roboto',
                         fontSize: pHeight * 0.025),
                   ),
                 ],
@@ -517,14 +508,12 @@ class CompletedTripExpanded extends StatelessWidget {
                         'Commission deducted',
                         style: TextStyle(
                             color: Colors.black.withOpacity(0.75),
-                            fontFamily: 'Roboto',
                             fontSize: pHeight * 0.025),
                       ),
                       Text(
                         'Inclusive of taxes',
                         style: TextStyle(
                             color: Colors.black.withOpacity(0.75),
-                            fontFamily: 'Roboto',
                             fontSize: pHeight * 0.018),
                       ),
                     ],
@@ -536,14 +525,12 @@ class CompletedTripExpanded extends StatelessWidget {
                         '\$ ',
                         style: TextStyle(
                             color: Colors.black.withOpacity(0.75),
-                            fontFamily: 'Roboto',
                             fontSize: pHeight * 0.02),
                       ),
                       Text(
                         '2.1',
                         style: TextStyle(
                             color: Colors.black.withOpacity(0.75),
-                            fontFamily: 'Roboto',
                             fontWeight: FontWeight.bold,
                             fontSize: pHeight * 0.02),
                       ),
@@ -562,7 +549,6 @@ class CompletedTripExpanded extends StatelessWidget {
                     'Your rating',
                     style: TextStyle(
                         color: Colors.black.withOpacity(0.55),
-                        fontFamily: 'Roboto',
                         fontSize: pHeight * 0.025),
                   ),
                   RatingBar.readOnly(

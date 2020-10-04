@@ -1,4 +1,5 @@
-import 'package:hexcolor/hexcolor.dart';
+import 'package:driverapp/Classes/Constants.dart';
+
 import 'package:flutter/material.dart';
 import 'VehicleDetails.dart';
 
@@ -19,7 +20,7 @@ class _DriverDetailsState extends State<DriverDetails> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Hexcolor("#2A2E43"),
+        backgroundColor: kSecondaryColor,
         title: Text("Personal Details"),
       ),
       body: Stack(
@@ -45,7 +46,7 @@ class _DriverDetailsState extends State<DriverDetails> {
                     decoration: BoxDecoration(
                       // borderRadius: BorderRadius.circular(14),
                       border: Border.all(
-                        color: Hexcolor("#282C41"),
+                        color: Color(0xff282C41),
                       ),
                     ),
                     child: TextFormField(
@@ -58,8 +59,7 @@ class _DriverDetailsState extends State<DriverDetails> {
                         // fillColor: kFormColor,
                         // filled: true,
                         hintText: 'Stephen',
-                        hintStyle: TextStyle(
-                            fontFamily: 'Roboto', fontSize: pHeight * 0.025),
+                        hintStyle: TextStyle(fontSize: pHeight * 0.025),
                       ),
                     ),
                   ),
@@ -81,7 +81,7 @@ class _DriverDetailsState extends State<DriverDetails> {
                     decoration: BoxDecoration(
                       // borderRadius: BorderRadius.circular(14),
                       border: Border.all(
-                        color: Hexcolor("#282C41"),
+                        color: Color(0xff282C41),
                       ),
                     ),
                     child: TextFormField(
@@ -94,8 +94,7 @@ class _DriverDetailsState extends State<DriverDetails> {
                         // fillColor: kFormColor,
                         // filled: true,
                         hintText: 'George',
-                        hintStyle: TextStyle(
-                            fontFamily: 'Roboto', fontSize: pHeight * 0.025),
+                        hintStyle: TextStyle(fontSize: pHeight * 0.025),
                       ),
                     ),
                   ),
@@ -117,7 +116,7 @@ class _DriverDetailsState extends State<DriverDetails> {
                     decoration: BoxDecoration(
                       // borderRadius: BorderRadius.circular(14),
                       border: Border.all(
-                        color: Hexcolor("#282C41"),
+                        color: Color(0xff282C41),
                       ),
                     ),
                     child: TextFormField(
@@ -130,8 +129,7 @@ class _DriverDetailsState extends State<DriverDetails> {
                         // fillColor: kFormColor,
                         // filled: true,
                         hintText: 'stephengeorge@gmail.com',
-                        hintStyle: TextStyle(
-                            fontFamily: 'Roboto', fontSize: pHeight * 0.025),
+                        hintStyle: TextStyle(fontSize: pHeight * 0.025),
                       ),
                     ),
                   ),
@@ -153,7 +151,7 @@ class _DriverDetailsState extends State<DriverDetails> {
                     // decoration: BoxDecoration(
                     //   // borderRadius: BorderRadius.circular(14),
                     //   border: Border.all(
-                    //     color: Hexcolor("#282C41"),
+                    //     color: Color(0xff282C41),
                     //   ),
                     // ),
                     child: TextFormField(
@@ -167,7 +165,6 @@ class _DriverDetailsState extends State<DriverDetails> {
                         // filled: true,
                         hintText: '+91 9876543210',
                         hintStyle: TextStyle(
-                            fontFamily: 'Roboto',
                             fontSize: pHeight * 0.025,
                             fontWeight: FontWeight.bold),
                       ),
@@ -181,8 +178,11 @@ class _DriverDetailsState extends State<DriverDetails> {
                   padding: const EdgeInsets.fromLTRB(30, 15, 0, 0),
                   child: Center(
                     child: Text(
-                        'Above details are used for Registration and is verified.',
-                        style: TextStyle(color: Hexcolor("#B5B5B5"))),
+                      'Above details are used for Registration and is verified.',
+                      style: TextStyle(
+                        color: Color(0xffB5B5B5),
+                      ),
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -203,16 +203,14 @@ class _DriverDetailsState extends State<DriverDetails> {
                       height: pHeight * 0.065,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(14),
-                          color: Hexcolor("#F41C7B")),
+                          color: Color(0xffF41C7B)),
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Center(
                           child: Text(
                             'next',
                             style: TextStyle(
-                                color: Colors.white,
-                                fontFamily: 'Roboto',
-                                fontSize: pHeight * 0.035),
+                                color: Colors.white, fontSize: pHeight * 0.035),
                           ),
                         ),
                       ),

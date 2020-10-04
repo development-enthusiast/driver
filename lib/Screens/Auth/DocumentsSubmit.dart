@@ -1,5 +1,5 @@
 import 'package:driverapp/Screens/Profile.dart';
-import 'package:hexcolor/hexcolor.dart';
+
 import 'package:flutter/material.dart';
 
 class DocumentsSubmit extends StatefulWidget {
@@ -35,7 +35,7 @@ class _DocumentsSubmitState extends State<DocumentsSubmit> {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(10, 150, 10, 0),
+              padding: const EdgeInsets.fromLTRB(10, 100, 10, 0),
               child: Text(
                 "Please wait for your document approval\n                    before taking ride.",
                 style: TextStyle(fontSize: pHeight * 0.025),
@@ -59,7 +59,7 @@ class _DocumentsSubmitState extends State<DocumentsSubmit> {
                   shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(18.0),
                       side: BorderSide(
-                        color: Hexcolor("#F41C7B"),
+                        color: Color(0xffF41C7B),
                       )),
                   onPressed: () {
                     Navigator.push(
@@ -67,7 +67,7 @@ class _DocumentsSubmitState extends State<DocumentsSubmit> {
                       MaterialPageRoute(builder: (context) => Profile()),
                     );
                   },
-                  color: Hexcolor("#F41C7B"),
+                  color: Color(0xffF41C7B),
                   child: Text(
                     "OK",
                     style: TextStyle(

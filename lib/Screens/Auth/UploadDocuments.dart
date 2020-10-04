@@ -1,6 +1,6 @@
+import 'package:driverapp/Classes/Constants.dart';
 import 'package:driverapp/Screens/Auth/DocumentsSubmit.dart';
 import 'package:driverapp/Screens/Auth/DocumentsView.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/material.dart';
 
 class UploadDocuments extends StatefulWidget {
@@ -16,7 +16,7 @@ class _UploadDocumentsState extends State<UploadDocuments> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Hexcolor("#2A2E43"),
+        backgroundColor: kSecondaryColor,
         title: Text("Upload Documents"),
       ),
       body: SingleChildScrollView(
@@ -32,8 +32,7 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                 child: Text(
                   'Driver Documents',
                   style: TextStyle(
-                      color: Hexcolor("#3C3B5C"),
-                      fontFamily: 'Roboto',
+                      color: Color(0xff3C3B5C),
                       fontWeight: FontWeight.bold,
                       fontSize: pHeight * 0.030),
                 ),
@@ -51,8 +50,7 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                 child: Text(
                   'Driver Licence',
                   style: TextStyle(
-                      color: Hexcolor("#282C41"),
-                      fontFamily: 'Roboto',
+                      color: Color(0xff3C3B5C),
                       fontWeight: FontWeight.bold,
                       fontSize: pHeight * 0.025),
                 ),
@@ -65,14 +63,13 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                       onPressed: () {},
                       icon: Icon(
                         Icons.cancel,
-                        color: Hexcolor("#0D3745"),
+                        color: Color(0xff0D3745),
                       ),
                       label: Container(
                         child: Text(
                           'Waiting for Approval',
                           style: TextStyle(
-                              color: Hexcolor("#282C41"),
-                              fontFamily: 'Roboto',
+                              color: Color(0xff3C3B5C),
                               fontWeight: FontWeight.bold,
                               fontSize: pHeight * 0.015),
                         ),
@@ -112,7 +109,7 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                     padding: const EdgeInsets.fromLTRB(82, 100, 0, 35),
                     child: IconButton(
                       icon: Icon(Icons.cancel),
-                      color: Hexcolor("#EE2929"),
+                      color: Color(0xffEE2929),
                       onPressed: () {},
                     ),
                   ),
@@ -129,7 +126,7 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                     child: Container(
                       height: 1.0,
                       width: 330.0,
-                      color: Hexcolor("#707070"),
+                      color: Color(0xff707070),
                     ),
                   ),
                   Padding(
@@ -137,8 +134,7 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                     child: Text(
                       'Driver Badge',
                       style: TextStyle(
-                          color: Hexcolor("#282C41"),
-                          fontFamily: 'Roboto',
+                          color: Color(0xff3C3B5C),
                           fontWeight: FontWeight.bold,
                           fontSize: pHeight * 0.025),
                     ),
@@ -152,14 +148,13 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                           onPressed: null,
                           icon: Icon(
                             Icons.cancel,
-                            color: Hexcolor("#0D3745"),
+                            color: Color(0xff0D3745),
                           ),
                           label: Container(
                             child: Text(
                               'Waiting for Approval',
                               style: TextStyle(
-                                  color: Hexcolor("#282C41"),
-                                  fontFamily: 'Roboto',
+                                  color: Color(0xff3C3B5C),
                                   fontWeight: FontWeight.bold,
                                   fontSize: pHeight * 0.015),
                             ),
@@ -184,7 +179,7 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                     padding: const EdgeInsets.fromLTRB(82, 230, 0, 50),
                     child: IconButton(
                       icon: Icon(Icons.cancel),
-                      color: Hexcolor("#EE2929"),
+                      color: Color(0xffEE2929),
                       onPressed: () {},
                     ),
                   ),
@@ -208,7 +203,7 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                     child: Container(
                       height: 2.0,
                       width: pWidth,
-                      color: Hexcolor("#707070"),
+                      color: Color(0xff707070),
                     ),
                   ),
                   Row(
@@ -219,8 +214,7 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                         child: Text(
                           'Vehicle Documents',
                           style: TextStyle(
-                              color: Hexcolor("#3C3B5C"),
-                              fontFamily: 'Roboto',
+                              color: Color(0xff3C3B5C),
                               fontWeight: FontWeight.bold,
                               fontSize: pHeight * 0.030),
                         ),
@@ -235,8 +229,7 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                         child: Text(
                           'Reg. document',
                           style: TextStyle(
-                              color: Hexcolor("#282C41"),
-                              fontFamily: 'Roboto',
+                              color: Color(0xff3C3B5C),
                               fontWeight: FontWeight.bold,
                               fontSize: pHeight * 0.025),
                         ),
@@ -252,14 +245,13 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                           onPressed: null,
                           icon: Icon(
                             Icons.cancel,
-                            color: Hexcolor("#0D3745"),
+                            color: Color(0xff0D3745),
                           ),
                           label: Container(
                             child: Text(
                               'Waiting for Approval',
                               style: TextStyle(
-                                  color: Hexcolor("#282C41"),
-                                  fontFamily: 'Roboto',
+                                  color: Color(0xff3C3B5C),
                                   fontWeight: FontWeight.bold,
                                   fontSize: pHeight * 0.015),
                             ),
@@ -285,7 +277,7 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                     child: Container(
                       height: 1.0,
                       width: 330.0,
-                      color: Hexcolor("#707070"),
+                      color: Color(0xff707070),
                     ),
                   ),
                   Padding(
@@ -293,8 +285,7 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                     child: Text(
                       'Insurance',
                       style: TextStyle(
-                          color: Hexcolor("#282C41"),
-                          fontFamily: 'Roboto',
+                          color: Color(0xff3C3B5C),
                           fontWeight: FontWeight.bold,
                           fontSize: pHeight * 0.025),
                     ),
@@ -308,14 +299,13 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                           onPressed: null,
                           icon: Icon(
                             Icons.cancel,
-                            color: Hexcolor("#0D3745"),
+                            color: Color(0xff0D3745),
                           ),
                           label: Container(
                             child: Text(
                               'Waiting for Approval',
                               style: TextStyle(
-                                  color: Hexcolor("#282C41"),
-                                  fontFamily: 'Roboto',
+                                  color: Color(0xff3C3B5C),
                                   fontWeight: FontWeight.bold,
                                   fontSize: pHeight * 0.015),
                             ),
@@ -340,7 +330,7 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                     padding: const EdgeInsets.fromLTRB(82, 590, 0, 30),
                     child: IconButton(
                       icon: Icon(Icons.cancel),
-                      color: Hexcolor("#EE2929"),
+                      color: Color(0xffEE2929),
                       onPressed: () {},
                     ),
                   ),
@@ -378,14 +368,12 @@ class _UploadDocumentsState extends State<UploadDocuments> {
                     ),
                   );
                 },
-                color: Hexcolor("#F41C7B"),
+                color: Color(0xffF41C7B),
                 // textColor: Colors.white,
                 child: Text(
                   "Submit",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Roboto',
-                      fontSize: pHeight * 0.035),
+                  style:
+                      TextStyle(color: Colors.white, fontSize: pHeight * 0.035),
                 ),
               ),
             ),

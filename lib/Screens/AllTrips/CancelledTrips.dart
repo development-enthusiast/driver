@@ -80,7 +80,6 @@ class CancelledTripCollapsed extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.black,
                       fontSize: pHeight * 0.018,
-                      fontFamily: 'Roboto',
                       fontWeight: FontWeight.bold),
                 ),
                 Row(
@@ -90,7 +89,6 @@ class CancelledTripCollapsed extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: pHeight * 0.018,
-                        fontFamily: 'Roboto',
                       ),
                     ),
                     Text(
@@ -98,7 +96,6 @@ class CancelledTripCollapsed extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: pHeight * 0.018,
-                          fontFamily: 'Roboto',
                           fontWeight: FontWeight.bold),
                     ),
                     SizedBox(
@@ -109,7 +106,6 @@ class CancelledTripCollapsed extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.black,
                         fontSize: pHeight * 0.018,
-                        fontFamily: 'Roboto',
                       ),
                     ),
                     Text(
@@ -117,7 +113,6 @@ class CancelledTripCollapsed extends StatelessWidget {
                       style: TextStyle(
                           color: Colors.black,
                           fontSize: pHeight * 0.018,
-                          fontFamily: 'Roboto',
                           fontWeight: FontWeight.bold),
                     ),
                   ],
@@ -129,7 +124,6 @@ class CancelledTripCollapsed extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.red,
                         fontSize: pHeight * 0.018,
-                        fontFamily: 'Roboto',
                       ),
                     ),
                   ],
@@ -201,7 +195,6 @@ class CancelledTripExpanded extends StatelessWidget {
                 'Trips Summary',
                 style: TextStyle(
                   color: CupertinoColors.white,
-                  fontFamily: 'Roboto',
                   fontSize: pHeight * 0.025,
                 ),
               ),

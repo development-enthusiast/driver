@@ -59,9 +59,7 @@ class _SignUpState extends State<SignUp> {
                   Text(
                     'Sign Up',
                     style: TextStyle(
-                        color: Colors.black,
-                        fontFamily: 'Roboto',
-                        fontSize: pHeight * 0.035),
+                        color: Colors.black, fontSize: pHeight * 0.035),
                   ),
                 ],
               ),
@@ -78,7 +76,6 @@ class _SignUpState extends State<SignUp> {
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.black.withOpacity(0.65),
-                          fontFamily: 'Roboto',
                           fontSize: pHeight * 0.02),
                     ),
                   ),
@@ -106,8 +103,7 @@ class _SignUpState extends State<SignUp> {
                     fillColor: kFormColor,
                     filled: true,
                     hintText: 'Enter your name',
-                    hintStyle: TextStyle(
-                        fontFamily: 'Roboto', fontSize: pHeight * 0.025),
+                    hintStyle: TextStyle(fontSize: pHeight * 0.025),
                   ),
                 ),
               ),
@@ -133,8 +129,7 @@ class _SignUpState extends State<SignUp> {
                     fillColor: kFormColor,
                     filled: true,
                     hintText: 'Enter Email',
-                    hintStyle: TextStyle(
-                        fontFamily: 'Roboto', fontSize: pHeight * 0.025),
+                    hintStyle: TextStyle(fontSize: pHeight * 0.025),
                   ),
                 ),
               ),
@@ -162,7 +157,6 @@ class _SignUpState extends State<SignUp> {
                             '+91',
                             style: TextStyle(
                                 color: Colors.black.withOpacity(0.65),
-                                fontFamily: 'Roboto',
                                 fontSize: pHeight * 0.025),
                           ),
                         ),
@@ -190,8 +184,7 @@ class _SignUpState extends State<SignUp> {
                           fillColor: kFormColor,
                           filled: true,
                           hintText: 'Mobile Number',
-                          hintStyle: TextStyle(
-                              fontFamily: 'Roboto', fontSize: pHeight * 0.025),
+                          hintStyle: TextStyle(fontSize: pHeight * 0.025),
                         ),
                       ),
                     ),
@@ -220,9 +213,7 @@ class _SignUpState extends State<SignUp> {
                       child: Text(
                         'VERIFY',
                         style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: 'Roboto',
-                            fontSize: pHeight * 0.025),
+                            color: Colors.white, fontSize: pHeight * 0.025),
                       ),
                     ),
                   ),

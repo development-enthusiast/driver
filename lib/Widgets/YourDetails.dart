@@ -45,7 +45,6 @@ class _YourDetailsState extends State<YourDetails> {
                     'Harvey Specter',
                     style: TextStyle(
                         color: Colors.black.withOpacity(0.65),
-                        fontFamily: 'Roboto',
                         fontSize: widget.pHeight * 0.023),
                   )
                 ],
@@ -68,13 +67,12 @@ class _YourDetailsState extends State<YourDetails> {
                     onPressed: () {},
                   ),
                   SizedBox(
-                    height: widget.pHeight * 0.04,
+                    height: widget.pHeight * 0.03,
                   ),
                   Text(
                     'Your rating',
                     style: TextStyle(
                         color: CupertinoColors.black.withOpacity(0.65),
-                        fontFamily: 'Roboto',
                         fontSize: widget.pHeight * 0.02),
                   ),
                   SizedBox(
@@ -111,9 +109,9 @@ class _YourDetailsState extends State<YourDetails> {
                   child: Text(
                     'Personal Details',
                     style: TextStyle(
-                        color: Colors.black.withOpacity(0.65),
-                        fontSize: widget.pHeight * 0.025,
-                        fontFamily: 'Roboto'),
+                      color: Colors.black.withOpacity(0.65),
+                      fontSize: widget.pHeight * 0.025,
+                    ),
                   ),
                 ),
                 SizedBox(
@@ -135,7 +133,6 @@ class _YourDetailsState extends State<YourDetails> {
                         'Place, Country',
                         style: TextStyle(
                             color: Colors.black.withOpacity(0.65),
-                            fontFamily: 'Roboto',
                             fontSize: widget.pHeight * 0.018),
                       )
                     ],
@@ -160,7 +157,6 @@ class _YourDetailsState extends State<YourDetails> {
                         '+91 9876543210',
                         style: TextStyle(
                             color: Colors.black.withOpacity(0.65),
-                            fontFamily: 'Roboto',
                             fontSize: widget.pHeight * 0.018),
                       )
                     ],
@@ -185,7 +181,6 @@ class _YourDetailsState extends State<YourDetails> {
                         'johndoe@example.com',
                         style: TextStyle(
                             color: Colors.black.withOpacity(0.65),
-                            fontFamily: 'Roboto',
                             fontSize: widget.pHeight * 0.018),
                       )
                     ],
@@ -219,9 +214,9 @@ class _YourDetailsState extends State<YourDetails> {
                         child: Text(
                           'Service Details',
                           style: TextStyle(
-                              color: Colors.black.withOpacity(0.65),
-                              fontSize: widget.pHeight * 0.025,
-                              fontFamily: 'Roboto'),
+                            color: Colors.black.withOpacity(0.65),
+                            fontSize: widget.pHeight * 0.025,
+                          ),
                         ),
                       ),
                       SizedBox(
@@ -239,9 +234,9 @@ class _YourDetailsState extends State<YourDetails> {
                         child: Text(
                           'Comfort',
                           style: TextStyle(
-                              color: Colors.black.withOpacity(0.65),
-                              fontSize: widget.pHeight * 0.02,
-                              fontFamily: 'Roboto'),
+                            color: Colors.black.withOpacity(0.65),
+                            fontSize: widget.pHeight * 0.02,
+                          ),
                         ),
                       ),
                     ],
@@ -262,9 +257,9 @@ class _YourDetailsState extends State<YourDetails> {
                         child: Text(
                           'NU 20 TMV',
                           style: TextStyle(
-                              color: Colors.black.withOpacity(0.85),
-                              fontSize: widget.pHeight * 0.025,
-                              fontFamily: 'Roboto'),
+                            color: Colors.black.withOpacity(0.85),
+                            fontSize: widget.pHeight * 0.025,
+                          ),
                         ),
                       ),
                       SizedBox(
@@ -275,9 +270,9 @@ class _YourDetailsState extends State<YourDetails> {
                         child: Text(
                           'Mini Cab - Black',
                           style: TextStyle(
-                              color: Colors.black.withOpacity(0.85),
-                              fontSize: widget.pHeight * 0.025,
-                              fontFamily: 'Roboto'),
+                            color: Colors.black.withOpacity(0.85),
+                            fontSize: widget.pHeight * 0.025,
+                          ),
                         ),
                       ),
                     ],
@@ -311,9 +306,9 @@ class _YourDetailsState extends State<YourDetails> {
                         child: Text(
                           'Add ons selected',
                           style: TextStyle(
-                              color: Colors.black.withOpacity(0.65),
-                              fontSize: widget.pHeight * 0.025,
-                              fontFamily: 'Roboto'),
+                            color: Colors.black.withOpacity(0.65),
+                            fontSize: widget.pHeight * 0.025,
+                          ),
                         ),
                       ),
                       SizedBox(
@@ -335,7 +330,6 @@ class _YourDetailsState extends State<YourDetails> {
                                 'Walking Stick',
                                 style: TextStyle(
                                     color: Colors.black.withOpacity(0.65),
-                                    fontFamily: 'Roboto',
                                     fontSize: widget.pHeight * 0.02),
                               )
                             ],
@@ -354,7 +348,6 @@ class _YourDetailsState extends State<YourDetails> {
                                 'Wheelchair',
                                 style: TextStyle(
                                     color: Colors.black.withOpacity(0.65),
-                                    fontFamily: 'Roboto',
                                     fontSize: widget.pHeight * 0.02),
                               )
                             ],

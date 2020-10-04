@@ -2,6 +2,7 @@ import 'package:driverapp/Classes/Constants.dart';
 import 'package:flutter/material.dart';
 
 class SettlementDue extends StatefulWidget {
+  static const routeName = 'SettlementDue';
   @override
   _SettlementDueState createState() => _SettlementDueState();
 }
@@ -14,18 +15,18 @@ class _SettlementDueState extends State<SettlementDue> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: kSecondaryColor,
-        actions: <Widget>[
-          Expanded(
-            child: Center(
-              child: Text(
-                'Account Summary',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'Roboto',
-                    fontSize: pHeight * 0.025),
-              ),
-            ),
-          )
+        centerTitle: true,
+        title: Text(
+          'Settlement Due',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.notifications),
+            onPressed: () {},
+          ),
         ],
       ),
       backgroundColor: Color(0xFFECECEC),
@@ -46,7 +47,7 @@ class _SettlementDueState extends State<SettlementDue> {
                       ),
                       Image.asset(
                         'images/cash.png',
-                        scale: 3,
+                        scale: 3.5,
                       ),
                       SizedBox(
                         width: pWidth * 0.02,
@@ -58,18 +59,17 @@ class _SettlementDueState extends State<SettlementDue> {
                           Text(
                             'SETTLEMENT DUE',
                             style: TextStyle(
-                                color: Colors.black.withOpacity(0.8),
-                                fontSize: pHeight * 0.02,
-                                fontFamily: 'Roboto'),
+                              color: Colors.black.withOpacity(0.8),
+                              fontSize: pHeight * 0.02,
+                            ),
                           ),
                           Container(
                             width: pWidth * 0.4,
                             child: Text(
                               'Claim for payment from 17 Aug 2020',
                               style: TextStyle(
-                                  color: Colors.black.withOpacity(0.55),
-                                  fontSize: pHeight * 0.018,
-                                  fontFamily: 'Roboto'),
+                                color: Colors.black.withOpacity(0.55),
+                              ),
                             ),
                           ),
                         ],
@@ -82,15 +82,13 @@ class _SettlementDueState extends State<SettlementDue> {
                             '\$ ',
                             style: TextStyle(
                                 color: Colors.black.withOpacity(0.8),
-                                fontFamily: 'Roboto',
                                 fontSize: pHeight * 0.02),
                           ),
                           Text(
                             '7.46',
                             style: TextStyle(
                                 color: Colors.black.withOpacity(0.8),
-                                fontFamily: 'Roboto',
-                                fontSize: pHeight * 0.035,
+                                fontSize: pHeight * 0.03,
                                 fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
@@ -127,7 +125,7 @@ class _SettlementDueState extends State<SettlementDue> {
                       ),
                       Image.asset(
                         'images/cash.png',
-                        scale: 3,
+                        scale: 3.5,
                       ),
                       SizedBox(
                         width: pWidth * 0.02,
@@ -139,18 +137,17 @@ class _SettlementDueState extends State<SettlementDue> {
                           Text(
                             'TOTAL ONLINE INCOME',
                             style: TextStyle(
-                                color: Colors.black.withOpacity(0.8),
-                                fontSize: pHeight * 0.02,
-                                fontFamily: 'Roboto'),
+                              color: Colors.black.withOpacity(0.8),
+                              fontSize: pHeight * 0.02,
+                            ),
                           ),
                           Container(
                             width: pWidth * 0.35,
                             child: Text(
                               'should be paid on or before 28-Aug-2020',
                               style: TextStyle(
-                                  color: Colors.black.withOpacity(0.55),
-                                  fontSize: pHeight * 0.018,
-                                  fontFamily: 'Roboto'),
+                                color: Colors.black.withOpacity(0.55),
+                              ),
                             ),
                           ),
                         ],
@@ -163,15 +160,13 @@ class _SettlementDueState extends State<SettlementDue> {
                             '\$ ',
                             style: TextStyle(
                                 color: Colors.black.withOpacity(0.8),
-                                fontFamily: 'Roboto',
                                 fontSize: pHeight * 0.02),
                           ),
                           Text(
                             '775.74',
                             style: TextStyle(
                                 color: Colors.black.withOpacity(0.8),
-                                fontFamily: 'Roboto',
-                                fontSize: pHeight * 0.035,
+                                fontSize: pHeight * 0.03,
                                 fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
@@ -212,7 +207,7 @@ class _SettlementDueState extends State<SettlementDue> {
                           ),
                           Image.asset(
                             'images/cash.png',
-                            scale: 3,
+                            scale: 3.5,
                           ),
                           SizedBox(
                             width: pWidth * 0.02,
@@ -224,9 +219,9 @@ class _SettlementDueState extends State<SettlementDue> {
                               Text(
                                 'DUE DEDUCTION',
                                 style: TextStyle(
-                                    color: Colors.black.withOpacity(0.8),
-                                    fontSize: pHeight * 0.02,
-                                    fontFamily: 'Roboto'),
+                                  color: Colors.black.withOpacity(0.8),
+                                  fontSize: pHeight * 0.02,
+                                ),
                               ),
                             ],
                           ),
@@ -248,16 +243,16 @@ class _SettlementDueState extends State<SettlementDue> {
                         child: Row(
                           children: <Widget>[
                             SizedBox(
-                              width: pWidth * 0.2,
+                              width: pWidth * 0.1,
                             ),
                             Row(
                               children: <Widget>[
                                 Text(
                                   'ONLINE PAYMENT DUE',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.018,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.018,
+                                  ),
                                 ),
                                 SizedBox(
                                   width: pWidth * 0.16,
@@ -265,17 +260,17 @@ class _SettlementDueState extends State<SettlementDue> {
                                 Text(
                                   '\$ ',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.018,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.018,
+                                  ),
                                 ),
                                 Text(
                                   '375.5',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.025,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.025,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                                 SizedBox(
                                   width: pWidth * 0.02,
@@ -311,16 +306,16 @@ class _SettlementDueState extends State<SettlementDue> {
                         child: Row(
                           children: <Widget>[
                             SizedBox(
-                              width: pWidth * 0.2,
+                              width: pWidth * 0.1,
                             ),
                             Row(
                               children: <Widget>[
                                 Text(
                                   'CASH PAYMENT DUE',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.018,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.018,
+                                  ),
                                 ),
                                 SizedBox(
                                   width: pWidth * 0.17,
@@ -328,17 +323,17 @@ class _SettlementDueState extends State<SettlementDue> {
                                 Text(
                                   '\$ ',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.018,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.018,
+                                  ),
                                 ),
                                 Text(
                                   '387.87',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.025,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.025,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                                 SizedBox(
                                   width: pWidth * 0.02,
@@ -374,16 +369,16 @@ class _SettlementDueState extends State<SettlementDue> {
                         child: Row(
                           children: <Widget>[
                             SizedBox(
-                              width: pWidth * 0.2,
+                              width: pWidth * 0.1,
                             ),
                             Row(
                               children: <Widget>[
                                 Text(
                                   'TOTAL DUE DEDUCTION',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.018,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.018,
+                                  ),
                                 ),
                                 SizedBox(
                                   width: pWidth * 0.12,
@@ -391,17 +386,17 @@ class _SettlementDueState extends State<SettlementDue> {
                                 Text(
                                   '\$ ',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.018,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.018,
+                                  ),
                                 ),
                                 Text(
                                   '763.37',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.025,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.025,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                                 SizedBox(
                                   width: pWidth * 0.02,
@@ -444,9 +439,9 @@ class _SettlementDueState extends State<SettlementDue> {
                 child: Text(
                   'CLAIM    \$7.46',
                   style: TextStyle(
-                      color: Colors.white,
-                      fontSize: pHeight * 0.03,
-                      fontFamily: 'Roboto'),
+                    color: Colors.white,
+                    fontSize: pHeight * 0.03,
+                  ),
                 ),
               ),
             ),

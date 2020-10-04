@@ -1,4 +1,5 @@
-import 'package:hexcolor/hexcolor.dart';
+import 'package:driverapp/Classes/Constants.dart';
+
 import 'package:flutter/material.dart';
 
 class DocumentsView extends StatefulWidget {
@@ -14,7 +15,7 @@ class _DocumentsViewState extends State<DocumentsView> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Hexcolor("#2A2E43"),
+        backgroundColor: kSecondaryColor,
         title: Text("Driver"),
       ),
       body: Stack(
@@ -44,14 +45,13 @@ class _DocumentsViewState extends State<DocumentsView> {
               onPressed: null,
               icon: Icon(
                 Icons.cancel,
-                color: Hexcolor("#0D3745"),
+                color: Color(0xff0D3745),
               ),
               label: Container(
                 child: Text(
                   'Waiting for Approval',
                   style: TextStyle(
-                      color: Hexcolor("#282C41"),
-                      fontFamily: 'Roboto',
+                      color: Color(0xff282C41),
                       fontWeight: FontWeight.bold,
                       fontSize: pHeight * 0.020),
                 ),
@@ -66,16 +66,17 @@ class _DocumentsViewState extends State<DocumentsView> {
               height: pHeight * 0.070,
               child: RaisedButton(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18.0),
-                    side: BorderSide(color: Hexcolor("#2A2E43"))),
+                  borderRadius: BorderRadius.circular(18.0),
+                  side: BorderSide(
+                    color: Color(0xff2A2E43),
+                  ),
+                ),
                 onPressed: () {},
-                color: Hexcolor("#2A2E43"),
+                color: Color(0xff2A2E43),
                 child: Text(
                   "Remove",
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontFamily: 'Roboto',
-                      fontSize: pHeight * 0.035),
+                  style:
+                      TextStyle(color: Colors.white, fontSize: pHeight * 0.035),
                 ),
               ),
             ),

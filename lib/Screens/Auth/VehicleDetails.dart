@@ -1,4 +1,4 @@
-import 'package:hexcolor/hexcolor.dart';
+import 'package:driverapp/Classes/Constants.dart';
 import 'package:flutter/material.dart';
 import 'CustomRadio.dart';
 import 'UploadDocuments.dart';
@@ -35,7 +35,7 @@ class _VehicleDetailsState extends State<VehicleDetails> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Hexcolor("#2A2E43"),
+        backgroundColor: kSecondaryColor,
         title: Text("Vehicle Details"),
       ),
       body: Stack(
@@ -61,7 +61,7 @@ class _VehicleDetailsState extends State<VehicleDetails> {
                     decoration: BoxDecoration(
                       // borderRadius: BorderRadius.circular(14),
                       border: Border.all(
-                        color: Hexcolor("#282C41"),
+                        color: Color(0xff282C41),
                       ),
                     ),
                     child: DropdownButton(
@@ -103,7 +103,7 @@ class _VehicleDetailsState extends State<VehicleDetails> {
                     decoration: BoxDecoration(
                       // borderRadius: BorderRadius.circular(14),
                       border: Border.all(
-                        color: Hexcolor("#282C41"),
+                        color: Color(0xff282C41),
                       ),
                     ),
                     child: DropdownButton(
@@ -145,7 +145,7 @@ class _VehicleDetailsState extends State<VehicleDetails> {
                     decoration: BoxDecoration(
                       // borderRadius: BorderRadius.circular(14),
                       border: Border.all(
-                        color: Hexcolor("#282C41"),
+                        color: Color(0xff282C41),
                       ),
                     ),
                     child: DropdownButton(
@@ -187,7 +187,7 @@ class _VehicleDetailsState extends State<VehicleDetails> {
                     decoration: BoxDecoration(
                       // borderRadius: BorderRadius.circular(14),
                       border: Border.all(
-                        color: Hexcolor("#282C41"),
+                        color: Color(0xff282C41),
                       ),
                     ),
                     child: TextFormField(
@@ -217,7 +217,7 @@ class _VehicleDetailsState extends State<VehicleDetails> {
                     decoration: BoxDecoration(
                       // borderRadius: BorderRadius.circular(14),
                       border: Border.all(
-                        color: Hexcolor("#282C41"),
+                        color: Color(0xff282C41),
                       ),
                     ),
                     child: TextFormField(
@@ -238,7 +238,7 @@ class _VehicleDetailsState extends State<VehicleDetails> {
                   child: Text(
                     'Select Add ons available ',
                     style: TextStyle(
-                        color: Hexcolor("#3C3B5C"),
+                        color: Color(0xff282C41),
                         fontSize: 20,
                         fontWeight: FontWeight.bold),
                   ),
@@ -266,8 +266,9 @@ class _VehicleDetailsState extends State<VehicleDetails> {
                         width: pWidth * 0.85,
                         height: pHeight * 0.065,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(14),
-                            color: Hexcolor("#F41C7B")),
+                          borderRadius: BorderRadius.circular(14),
+                          color: Color(0xff282C41),
+                        ),
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Center(
@@ -275,7 +276,6 @@ class _VehicleDetailsState extends State<VehicleDetails> {
                               'next',
                               style: TextStyle(
                                   color: Colors.white,
-                                  fontFamily: 'Roboto',
                                   fontSize: pHeight * 0.035),
                             ),
                           ),

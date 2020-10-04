@@ -29,7 +29,6 @@ class _AllTripsState extends State<AllTrips> {
                   'Trips Summary',
                   style: TextStyle(
                     color: CupertinoColors.white,
-                    fontFamily: 'Roboto',
                     fontSize: pHeight * 0.025,
                   ),
                 ),
@@ -37,8 +36,7 @@ class _AllTripsState extends State<AllTrips> {
             ),
           ],
           bottom: TabBar(
-            labelStyle:
-                TextStyle(fontFamily: 'Roboto', fontSize: pHeight * 0.02),
+            labelStyle: TextStyle(fontSize: pHeight * 0.02),
             labelColor: kAccentColor,
             unselectedLabelColor: Colors.white,
             indicatorColor: kAccentColor,

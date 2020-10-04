@@ -40,9 +40,7 @@ class _LoginState extends State<Login> {
                   Text(
                     'Welcome To',
                     style: TextStyle(
-                        color: Colors.black,
-                        fontFamily: 'Roboto',
-                        fontSize: pHeight * 0.035),
+                        color: Colors.black, fontSize: pHeight * 0.035),
                   ),
                 ],
               ),
@@ -59,7 +57,6 @@ class _LoginState extends State<Login> {
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.black.withOpacity(0.65),
-                          fontFamily: 'Roboto',
                           fontSize: pHeight * 0.02),
                     ),
                   ),
@@ -78,7 +75,6 @@ class _LoginState extends State<Login> {
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.black.withOpacity(0.75),
-                          fontFamily: 'Roboto',
                           fontSize: pHeight * 0.02),
                     ),
                   ),
@@ -108,7 +104,6 @@ class _LoginState extends State<Login> {
                             '+91',
                             style: TextStyle(
                                 color: Colors.black.withOpacity(0.65),
-                                fontFamily: 'Roboto',
                                 fontSize: pHeight * 0.025),
                           ),
                         ),
@@ -136,8 +131,7 @@ class _LoginState extends State<Login> {
                           fillColor: kFormColor,
                           filled: true,
                           hintText: 'Mobile Number',
-                          hintStyle: TextStyle(
-                              fontFamily: 'Roboto', fontSize: pHeight * 0.025),
+                          hintStyle: TextStyle(fontSize: pHeight * 0.025),
                         ),
                       ),
                     ),
@@ -168,9 +162,7 @@ class _LoginState extends State<Login> {
                       child: Text(
                         'LOGIN',
                         style: TextStyle(
-                            color: Colors.white,
-                            fontFamily: 'Roboto',
-                            fontSize: pHeight * 0.025),
+                            color: Colors.white, fontSize: pHeight * 0.025),
                       ),
                     ),
                   ),
@@ -187,7 +179,6 @@ class _LoginState extends State<Login> {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.black.withOpacity(0.75),
-                        fontFamily: 'Roboto',
                         fontSize: pHeight * 0.018),
                   ),
                   SizedBox(
@@ -207,7 +198,6 @@ class _LoginState extends State<Login> {
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.black.withOpacity(0.75),
-                          fontFamily: 'Roboto',
                           fontSize: pHeight * 0.02),
                     ),
                   ),

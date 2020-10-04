@@ -52,9 +52,9 @@ class _DocumentsState extends State<Documents> {
           child: Text(
             'Driver Documents',
             style: TextStyle(
-                color: Colors.black.withOpacity(0.75),
-                fontSize: pHeight * 0.025,
-                fontFamily: 'Roboto'),
+              color: Colors.black.withOpacity(0.75),
+              fontSize: pHeight * 0.025,
+            ),
           ),
         ),
         SizedBox(
@@ -75,9 +75,9 @@ class _DocumentsState extends State<Documents> {
                       child: Text(
                         'Driving License',
                         style: TextStyle(
-                            color: Colors.black.withOpacity(0.75),
-                            fontSize: pHeight * 0.02,
-                            fontFamily: 'Roboto'),
+                          color: Colors.black.withOpacity(0.75),
+                          fontSize: pHeight * 0.02,
+                        ),
                       ),
                     ),
                     license == null
@@ -112,9 +112,9 @@ class _DocumentsState extends State<Documents> {
                         Text(
                           'Approved',
                           style: TextStyle(
-                              color: Colors.black.withOpacity(0.75),
-                              fontSize: pHeight * 0.02,
-                              fontFamily: 'Roboto'),
+                            color: Colors.black.withOpacity(0.75),
+                            fontSize: pHeight * 0.02,
+                          ),
                         ),
                       ],
                     )
@@ -139,9 +139,9 @@ class _DocumentsState extends State<Documents> {
                       child: Text(
                         'Badge',
                         style: TextStyle(
-                            color: Colors.black.withOpacity(0.75),
-                            fontSize: pHeight * 0.02,
-                            fontFamily: 'Roboto'),
+                          color: Colors.black.withOpacity(0.75),
+                          fontSize: pHeight * 0.02,
+                        ),
                       ),
                     ),
                     badge == null
@@ -176,9 +176,9 @@ class _DocumentsState extends State<Documents> {
                         Text(
                           'Approved',
                           style: TextStyle(
-                              color: Colors.black.withOpacity(0.75),
-                              fontSize: pHeight * 0.02,
-                              fontFamily: 'Roboto'),
+                            color: Colors.black.withOpacity(0.75),
+                            fontSize: pHeight * 0.02,
+                          ),
                         ),
                       ],
                     )
@@ -196,9 +196,9 @@ class _DocumentsState extends State<Documents> {
           child: Text(
             'Vehicle Documents',
             style: TextStyle(
-                color: Colors.black.withOpacity(0.75),
-                fontSize: pHeight * 0.025,
-                fontFamily: 'Roboto'),
+              color: Colors.black.withOpacity(0.75),
+              fontSize: pHeight * 0.025,
+            ),
           ),
         ),
         SizedBox(
@@ -219,9 +219,9 @@ class _DocumentsState extends State<Documents> {
                       child: Text(
                         'Reg. Documents',
                         style: TextStyle(
-                            color: Colors.black.withOpacity(0.75),
-                            fontSize: pHeight * 0.02,
-                            fontFamily: 'Roboto'),
+                          color: Colors.black.withOpacity(0.75),
+                          fontSize: pHeight * 0.02,
+                        ),
                       ),
                     ),
                     regDoc == null
@@ -256,9 +256,9 @@ class _DocumentsState extends State<Documents> {
                         Text(
                           'Approved',
                           style: TextStyle(
-                              color: Colors.black.withOpacity(0.75),
-                              fontSize: pHeight * 0.02,
-                              fontFamily: 'Roboto'),
+                            color: Colors.black.withOpacity(0.75),
+                            fontSize: pHeight * 0.02,
+                          ),
                         ),
                       ],
                     )

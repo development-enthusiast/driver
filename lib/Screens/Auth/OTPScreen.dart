@@ -56,9 +56,7 @@ class _OTPScreenState extends State<OTPScreen> {
                   Text(
                     'Verify Mobile Number',
                     style: TextStyle(
-                        color: Colors.black,
-                        fontFamily: 'Roboto',
-                        fontSize: pHeight * 0.035),
+                        color: Colors.black, fontSize: pHeight * 0.035),
                   ),
                 ],
               ),
@@ -75,7 +73,6 @@ class _OTPScreenState extends State<OTPScreen> {
                       textAlign: TextAlign.center,
                       style: TextStyle(
                           color: Colors.black.withOpacity(0.65),
-                          fontFamily: 'Roboto',
                           fontSize: pHeight * 0.02),
                     ),
                   ),
@@ -106,7 +103,6 @@ class _OTPScreenState extends State<OTPScreen> {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.black.withOpacity(0.75),
-                        fontFamily: 'Roboto',
                         fontSize: pHeight * 0.018),
                   ),
                   SizedBox(
@@ -117,7 +113,6 @@ class _OTPScreenState extends State<OTPScreen> {
                     textAlign: TextAlign.center,
                     style: TextStyle(
                         color: Colors.black.withOpacity(0.75),
-                        fontFamily: 'Roboto',
                         fontSize: pHeight * 0.02),
                   ),
                 ],
@@ -137,9 +132,7 @@ class _OTPScreenState extends State<OTPScreen> {
                     child: Text(
                       'VERIFY',
                       style: TextStyle(
-                          color: Colors.white,
-                          fontFamily: 'Roboto',
-                          fontSize: pHeight * 0.025),
+                          color: Colors.white, fontSize: pHeight * 0.025),
                     ),
                   ),
                 ),
