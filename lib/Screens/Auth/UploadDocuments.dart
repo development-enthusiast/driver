@@ -368,7 +368,7 @@ class _UploadDocumentsState extends State<UploadDocuments> {
               height: pHeight * 0.065,
               child: RaisedButton(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18.0),
+                    borderRadius: BorderRadius.circular(10.0),
                     side: BorderSide(color: Colors.red)),
                 onPressed: () {
                   Navigator.push(

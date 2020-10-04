@@ -1,3 +1,4 @@
+import 'package:driverapp/utilities/size_config.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/material.dart';
 import 'CustomRadio.dart';
@@ -30,6 +31,7 @@ class _VehicleDetailsState extends State<VehicleDetails> {
   ];
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     final pHeight = MediaQuery.of(context).size.height;
     final pWidth = MediaQuery.of(context).size.width;
     return Scaffold(
@@ -248,7 +250,7 @@ class _VehicleDetailsState extends State<VehicleDetails> {
                 ),
                 CustomRadio(),
                 SizedBox(
-                  height: pHeight * 0.04,
+                  height: pHeight * 0.08,
                 ),
                 Center(
                   child: InkWell(
@@ -263,10 +265,10 @@ class _VehicleDetailsState extends State<VehicleDetails> {
                     child: Padding(
                       padding: const EdgeInsets.fromLTRB(0, 0, 0, 30),
                       child: Container(
-                        width: pWidth * 0.85,
-                        height: pHeight * 0.065,
+                        height: SizeConfig.deviceHeight * 8,
+                        width: SizeConfig.deviceWidth * 90,
                         decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(14),
+                            borderRadius: BorderRadius.circular(10),
                             color: Hexcolor("#F41C7B")),
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),

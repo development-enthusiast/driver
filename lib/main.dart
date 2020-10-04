@@ -1,6 +1,7 @@
-import 'package:driverapp/Screens/Auth/DocumentsSubmit.dart';
-import 'package:driverapp/Screens/Profile.dart';
 import 'package:driverapp/Screens/SplashScreen.dart';
+import 'package:driverapp/TripAlerts/gotRide.dart';
+
+import 'Screens/Home/Home.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,9 +14,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
         title: 'Flutter Demo',
+        debugShowCheckedModeBanner: false,
         theme: ThemeData(
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        home: SplashScreen());
+        home: Gotride());
   }
 }

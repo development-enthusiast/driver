@@ -1,3 +1,4 @@
+import 'package:driverapp/utilities/size_config.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -16,6 +17,7 @@ class _CustomRadioState extends State<CustomRadio> {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return Container(
       width: double.infinity,
       child: Column(
@@ -25,28 +27,52 @@ class _CustomRadioState extends State<CustomRadio> {
           SizedBox(
             height: 30.0,
           ),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              customRadio2(iconList[0], 0),
-              Text('No Add ons'),
-              customRadio2(iconList[1], 1),
-              Text('Wheel Chair'),
-              // customRadio2(iconList[2], 2),
-            ],
+          Padding(
+            padding:
+                EdgeInsets.symmetric(horizontal: SizeConfig.deviceWidth * 5),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: <Widget>[
+                Image.asset(
+                  "images/none.png",
+                  height: SizeConfig.deviceHeight * 10,
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(
+                      horizontal: SizeConfig.deviceWidth * 0.01),
+                  child: Text('No Add ons'),
+                ),
+                Image.asset(
+                  "images/wheel.png",
+                  height: SizeConfig.deviceHeight * 10,
+                ),
+                Padding(
+                  padding: EdgeInsets.symmetric(
+                      horizontal: SizeConfig.deviceWidth * 0.01),
+                  child: Text('Wheel Chair'),
+                ),
+              ],
+            ),
           ),
           Padding(
-            padding: const EdgeInsets.fromLTRB(15, 0, 0, 0),
+            padding:
+                EdgeInsets.symmetric(horizontal: SizeConfig.deviceWidth * 7),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: <Widget>[
                 // customRadio2(iconList[0], 0),
                 // customRadio2(iconList[1], 1),
-                customRadio2(iconList[2], 2),
-                Padding(
-                  padding: const EdgeInsets.fromLTRB(10, 0, 0, 0),
-                  child: Text('Walking Stick '),
+                Image.asset(
+                  "images/walkhelp.png",
+                  height: SizeConfig.deviceHeight * 8,
                 ),
+                Padding(
+                    padding: EdgeInsets.symmetric(
+                        horizontal: SizeConfig.deviceWidth * 1),
+                    child: Text(
+                      'Walking Stick ',
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    )),
               ],
             ),
           )

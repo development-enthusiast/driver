@@ -1,3 +1,4 @@
+import 'package:driverapp/Screens/Home/Home.dart';
 import 'package:driverapp/Screens/Profile.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/material.dart';
@@ -64,7 +65,7 @@ class _DocumentsSubmitState extends State<DocumentsSubmit> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => Profile()),
+                      MaterialPageRoute(builder: (context) => Home()),
                     );
                   },
                   color: Hexcolor("#F41C7B"),

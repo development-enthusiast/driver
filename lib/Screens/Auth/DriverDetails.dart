@@ -1,3 +1,4 @@
+import 'package:driverapp/utilities/size_config.dart';
 import 'package:hexcolor/hexcolor.dart';
 import 'package:flutter/material.dart';
 import 'VehicleDetails.dart';
@@ -14,6 +15,7 @@ class _DriverDetailsState extends State<DriverDetails> {
   TextEditingController email = new TextEditingController(text: '');
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     final pHeight = MediaQuery.of(context).size.height;
     final pWidth = MediaQuery.of(context).size.width;
     return Scaffold(
@@ -32,7 +34,8 @@ class _DriverDetailsState extends State<DriverDetails> {
                   height: pHeight * 0.10,
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(30, 15, 0, 0),
+                  padding: EdgeInsets.symmetric(
+                      horizontal: SizeConfig.deviceWidth * 7),
                   child: Text('First name*'),
                 ),
                 SizedBox(
@@ -68,7 +71,8 @@ class _DriverDetailsState extends State<DriverDetails> {
                   height: pHeight * 0.02,
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(30, 15, 0, 0),
+                  padding: EdgeInsets.symmetric(
+                      horizontal: SizeConfig.deviceWidth * 7),
                   child: Text('Last name'),
                 ),
                 SizedBox(
@@ -104,7 +108,8 @@ class _DriverDetailsState extends State<DriverDetails> {
                   height: pHeight * 0.02,
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(30, 15, 0, 0),
+                  padding: EdgeInsets.symmetric(
+                      horizontal: SizeConfig.deviceWidth * 7),
                   child: Text('Email ID*'),
                 ),
                 SizedBox(
@@ -137,10 +142,11 @@ class _DriverDetailsState extends State<DriverDetails> {
                   ),
                 ),
                 SizedBox(
-                  height: pHeight * 0.02,
+                  height: pHeight * 0.04,
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(30, 15, 0, 0),
+                  padding: EdgeInsets.symmetric(
+                      horizontal: SizeConfig.deviceWidth * 7),
                   child: Text('Mobile*'),
                 ),
                 SizedBox(
@@ -148,7 +154,7 @@ class _DriverDetailsState extends State<DriverDetails> {
                 ),
                 Center(
                   child: Container(
-                    width: pWidth * 0.85,
+                    width: pWidth * 0.92,
                     height: pHeight * 0.065,
                     // decoration: BoxDecoration(
                     //   // borderRadius: BorderRadius.circular(14),
@@ -178,15 +184,19 @@ class _DriverDetailsState extends State<DriverDetails> {
                   height: pHeight * 0.01,
                 ),
                 Padding(
-                  padding: const EdgeInsets.fromLTRB(30, 15, 0, 0),
+                  padding: EdgeInsets.only(
+                      top: SizeConfig.deviceHeight * 2,
+                      left: SizeConfig.deviceWidth * 7),
                   child: Center(
                     child: Text(
                         'Above details are used for Registration and is verified.',
-                        style: TextStyle(color: Hexcolor("#B5B5B5"))),
+                        style: TextStyle(
+                            color: Hexcolor("#B5B5B5"),
+                            fontSize: SizeConfig.deviceHeight * 2.3)),
                   ),
                 ),
                 SizedBox(
-                  height: pHeight * 0.04,
+                  height: pHeight * 0.08,
                 ),
                 Center(
                   child: InkWell(
@@ -199,10 +209,10 @@ class _DriverDetailsState extends State<DriverDetails> {
                       );
                     },
                     child: Container(
-                      width: pWidth * 0.85,
-                      height: pHeight * 0.065,
+                      height: SizeConfig.deviceHeight * 8,
+                      width: SizeConfig.deviceWidth * 90,
                       decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(14),
+                          borderRadius: BorderRadius.circular(10),
                           color: Hexcolor("#F41C7B")),
                       child: Padding(
                         padding: const EdgeInsets.all(8.0),
@@ -218,6 +228,9 @@ class _DriverDetailsState extends State<DriverDetails> {
                       ),
                     ),
                   ),
+                ),
+                SizedBox(
+                  height: pHeight * 0.04,
                 ),
               ],
             ),
