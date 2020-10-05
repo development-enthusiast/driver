@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:ui';
 
+import 'package:driverapp/Screens/AllTrips/FinishedTrip.dart';
 import 'package:driverapp/TripAlerts/tripOTP.dart';
 import 'package:driverapp/utilities/size_config.dart';
 import 'package:flutter/material.dart';
@@ -715,17 +716,13 @@ class _OnrideState extends State<Onride> {
                                                                           7.0),
                                                             ),
                                                             onPressed: () {
-                                                              // Navigator.push(
-                                                              //   context,
-                                                              //   MaterialPageRoute(
-                                                              //     builder:
-                                                              //         (context) =>
-                                                              //             TripOTP(
-                                                              //       phoneNumber:
-                                                              //           null,
-                                                              //     ),
-                                                              //   ),
-                                                              // );
+                                                              Navigator.push(
+                                                                context,
+                                                                MaterialPageRoute(
+                                                                    builder:
+                                                                        (context) =>
+                                                                            FinishedTrip()),
+                                                              );
                                                             },
                                                             color: Hexcolor(
                                                                 "#F41C7B"),

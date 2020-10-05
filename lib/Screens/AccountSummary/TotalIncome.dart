@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:rating_bar/rating_bar.dart';
 
 class TotalIncome extends StatefulWidget {
+  static const routeName = 'TotalIncome';
   @override
   _TotalIncomeState createState() => _TotalIncomeState();
 }
@@ -16,23 +17,74 @@ class _TotalIncomeState extends State<TotalIncome> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: kSecondaryColor,
-        actions: <Widget>[
-          Expanded(
-            child: Center(
-              child: Text(
-                'Account Summary',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'Roboto',
-                    fontSize: pHeight * 0.025),
-              ),
-            ),
-          )
+        elevation: 0,
+        bottomOpacity: 0,
+        centerTitle: true,
+        title: Text(
+          'Total Income',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.notifications),
+            onPressed: () {},
+          ),
         ],
       ),
       backgroundColor: Color(0xFFECECEC),
       body: Column(
         children: <Widget>[
+          Container(
+            width: pWidth,
+            height: pHeight * 0.04,
+            color: kSecondaryColor,
+            padding: EdgeInsets.symmetric(horizontal: pWidth * 0.03),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                    child: Row(
+                      children: [
+                        Image.asset('images/sort.png'),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Text(
+                          'Sort',
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: Container(
+                    child: Row(
+                      children: [
+                        Image.asset('images/filter.png'),
+                        SizedBox(
+                          width: 5,
+                        ),
+                        Text(
+                          'Filter',
+                          style: TextStyle(
+                            color: Colors.white,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ),
           Card(
             child: Container(
               height: pHeight * 0.135,
@@ -45,7 +97,7 @@ class _TotalIncomeState extends State<TotalIncome> {
                     ),
                     Image.asset(
                       'images/cash.png',
-                      scale: 3,
+                      scale: 3.5,
                     ),
                     SizedBox(
                       width: pWidth * 0.02,
@@ -177,6 +229,9 @@ class _TotalIncomeState extends State<TotalIncome> {
                                       fontWeight: FontWeight.bold),
                                 ),
                               ],
+                            ),
+                            SizedBox(
+                              height: 5,
                             ),
                             Row(
                               children: <Widget>[

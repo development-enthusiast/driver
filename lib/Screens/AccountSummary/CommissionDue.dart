@@ -2,6 +2,7 @@ import 'package:driverapp/Classes/Constants.dart';
 import 'package:flutter/material.dart';
 
 class CommissionDue extends StatefulWidget {
+  static const routeName = 'CommissionDue';
   @override
   _CommissionDueState createState() => _CommissionDueState();
 }
@@ -14,18 +15,18 @@ class _CommissionDueState extends State<CommissionDue> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: kSecondaryColor,
-        actions: <Widget>[
-          Expanded(
-            child: Center(
-              child: Text(
-                'Account Summary',
-                style: TextStyle(
-                    color: Colors.white,
-                    fontFamily: 'Roboto',
-                    fontSize: pHeight * 0.025),
-              ),
-            ),
-          )
+        centerTitle: true,
+        title: Text(
+          'Commission Due',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.notifications),
+            onPressed: () {},
+          ),
         ],
       ),
       backgroundColor: Color(0xFFECECEC),
@@ -46,7 +47,7 @@ class _CommissionDueState extends State<CommissionDue> {
                       ),
                       Image.asset(
                         'images/cash.png',
-                        scale: 3,
+                        scale: 3.5,
                       ),
                       SizedBox(
                         width: pWidth * 0.02,
@@ -58,18 +59,18 @@ class _CommissionDueState extends State<CommissionDue> {
                           Text(
                             'COMMISSION DUE',
                             style: TextStyle(
-                                color: Colors.black.withOpacity(0.8),
-                                fontSize: pHeight * 0.025,
-                                fontFamily: 'Roboto'),
+                              color: Colors.black.withOpacity(0.8),
+                              fontSize: pHeight * 0.025,
+                            ),
                           ),
                           Container(
                             width: pWidth * 0.4,
                             child: Text(
                               'should be paid on or before 28-Aug-2020',
                               style: TextStyle(
-                                  color: Colors.black.withOpacity(0.55),
-                                  fontSize: pHeight * 0.018,
-                                  fontFamily: 'Roboto'),
+                                color: Colors.black.withOpacity(0.55),
+                                fontSize: pHeight * 0.018,
+                              ),
                             ),
                           ),
                         ],
@@ -82,15 +83,13 @@ class _CommissionDueState extends State<CommissionDue> {
                             '\$ ',
                             style: TextStyle(
                                 color: Colors.black.withOpacity(0.8),
-                                fontFamily: 'Roboto',
                                 fontSize: pHeight * 0.02),
                           ),
                           Text(
                             '12.37',
                             style: TextStyle(
                                 color: Colors.black.withOpacity(0.8),
-                                fontFamily: 'Roboto',
-                                fontSize: pHeight * 0.035,
+                                fontSize: pHeight * 0.03,
                                 fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
@@ -127,7 +126,7 @@ class _CommissionDueState extends State<CommissionDue> {
                       ),
                       Image.asset(
                         'images/cash.png',
-                        scale: 3,
+                        scale: 3.5,
                       ),
                       SizedBox(
                         width: pWidth * 0.02,
@@ -139,18 +138,18 @@ class _CommissionDueState extends State<CommissionDue> {
                           Text(
                             'TOTAL ONLINE INCOME',
                             style: TextStyle(
-                                color: Colors.black.withOpacity(0.8),
-                                fontSize: pHeight * 0.025,
-                                fontFamily: 'Roboto'),
+                              color: Colors.black.withOpacity(0.8),
+                              fontSize: pHeight * 0.023,
+                            ),
                           ),
                           Container(
                             width: pWidth * 0.4,
                             child: Text(
                               'should be paid on or before 28-Aug-2020',
                               style: TextStyle(
-                                  color: Colors.black.withOpacity(0.55),
-                                  fontSize: pHeight * 0.018,
-                                  fontFamily: 'Roboto'),
+                                color: Colors.black.withOpacity(0.55),
+                                fontSize: pHeight * 0.018,
+                              ),
                             ),
                           ),
                         ],
@@ -163,15 +162,13 @@ class _CommissionDueState extends State<CommissionDue> {
                             '\$ ',
                             style: TextStyle(
                                 color: Colors.black.withOpacity(0.8),
-                                fontFamily: 'Roboto',
                                 fontSize: pHeight * 0.02),
                           ),
                           Text(
                             '751',
                             style: TextStyle(
                                 color: Colors.black.withOpacity(0.8),
-                                fontFamily: 'Roboto',
-                                fontSize: pHeight * 0.035,
+                                fontSize: pHeight * 0.03,
                                 fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
@@ -212,7 +209,7 @@ class _CommissionDueState extends State<CommissionDue> {
                           ),
                           Image.asset(
                             'images/cash.png',
-                            scale: 3,
+                            scale: 3.5,
                           ),
                           SizedBox(
                             width: pWidth * 0.02,
@@ -224,9 +221,9 @@ class _CommissionDueState extends State<CommissionDue> {
                               Text(
                                 'DUE DEDUCTION',
                                 style: TextStyle(
-                                    color: Colors.black.withOpacity(0.8),
-                                    fontSize: pHeight * 0.025,
-                                    fontFamily: 'Roboto'),
+                                  color: Colors.black.withOpacity(0.8),
+                                  fontSize: pHeight * 0.025,
+                                ),
                               ),
                             ],
                           ),
@@ -248,16 +245,16 @@ class _CommissionDueState extends State<CommissionDue> {
                         child: Row(
                           children: <Widget>[
                             SizedBox(
-                              width: pWidth * 0.2,
+                              width: pWidth * 0.1,
                             ),
                             Row(
                               children: <Widget>[
                                 Text(
                                   'ONLINE PAYMENT DUE',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.018,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.018,
+                                  ),
                                 ),
                                 SizedBox(
                                   width: pWidth * 0.16,
@@ -265,17 +262,17 @@ class _CommissionDueState extends State<CommissionDue> {
                                 Text(
                                   '\$ ',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.018,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.018,
+                                  ),
                                 ),
                                 Text(
                                   '375.5',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.025,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.025,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                                 SizedBox(
                                   width: pWidth * 0.02,
@@ -311,16 +308,16 @@ class _CommissionDueState extends State<CommissionDue> {
                         child: Row(
                           children: <Widget>[
                             SizedBox(
-                              width: pWidth * 0.2,
+                              width: pWidth * 0.1,
                             ),
                             Row(
                               children: <Widget>[
                                 Text(
                                   'CASH PAYMENT DUE',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.018,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.018,
+                                  ),
                                 ),
                                 SizedBox(
                                   width: pWidth * 0.17,
@@ -328,17 +325,17 @@ class _CommissionDueState extends State<CommissionDue> {
                                 Text(
                                   '\$ ',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.018,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.018,
+                                  ),
                                 ),
                                 Text(
                                   '387.87',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.025,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.025,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                                 SizedBox(
                                   width: pWidth * 0.02,
@@ -374,16 +371,16 @@ class _CommissionDueState extends State<CommissionDue> {
                         child: Row(
                           children: <Widget>[
                             SizedBox(
-                              width: pWidth * 0.2,
+                              width: pWidth * 0.1,
                             ),
                             Row(
                               children: <Widget>[
                                 Text(
                                   'TOTAL DUE DEDUCTION',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.018,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.018,
+                                  ),
                                 ),
                                 SizedBox(
                                   width: pWidth * 0.12,
@@ -391,17 +388,17 @@ class _CommissionDueState extends State<CommissionDue> {
                                 Text(
                                   '\$ ',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.018,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.018,
+                                  ),
                                 ),
                                 Text(
                                   '763.37',
                                   style: TextStyle(
-                                      color: Colors.black.withOpacity(0.8),
-                                      fontSize: pHeight * 0.025,
-                                      fontWeight: FontWeight.bold,
-                                      fontFamily: 'Roboto'),
+                                    color: Colors.black.withOpacity(0.8),
+                                    fontSize: pHeight * 0.025,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                                 SizedBox(
                                   width: pWidth * 0.02,
@@ -444,9 +441,9 @@ class _CommissionDueState extends State<CommissionDue> {
                 child: Text(
                   'PAY    \$12.37',
                   style: TextStyle(
-                      color: Colors.white,
-                      fontSize: pHeight * 0.03,
-                      fontFamily: 'Roboto'),
+                    color: Colors.white,
+                    fontSize: pHeight * 0.03,
+                  ),
                 ),
               ),
             ),

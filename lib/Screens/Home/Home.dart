@@ -1,5 +1,11 @@
 import 'dart:async';
 
+import 'package:driverapp/Screens/AccountSummary/AccountSummaryMain.dart';
+import 'package:driverapp/Screens/AllTrips/ThankYouScreen.dart';
+import 'package:driverapp/Screens/Profile.dart';
+import 'package:driverapp/Screens/SupportScreen.dart';
+import 'package:driverapp/Screens/TermsCondition.dart';
+import 'package:driverapp/Screens/TripSummary/Tripsummary.dart';
 import 'package:driverapp/TripAlerts/gotRide.dart';
 import 'package:driverapp/utilities/size_config.dart';
 import 'package:flutter/material.dart';
@@ -135,35 +141,70 @@ class _HomeState extends State<Home> {
                   ),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Profile(),
+                      ),
+                    );
+                  },
                   child: ListTile(
                     leading: Icon(Icons.person),
                     title: Text('Profile'),
                   ),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => TripSummary(),
+                      ),
+                    );
+                  },
                   child: ListTile(
                     leading: Icon(Icons.history),
                     title: Text('Trip History'),
                   ),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => AccountSummaryMain(),
+                      ),
+                    );
+                  },
                   child: ListTile(
                     leading: Icon(Icons.account_balance),
                     title: Text('Account Summary'),
                   ),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SupportScreen(),
+                      ),
+                    );
+                  },
                   child: ListTile(
                     leading: Icon(Icons.support),
                     title: Text('Support & FAQ'),
                   ),
                 ),
                 InkWell(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => TermsCondition(),
+                      ),
+                    );
+                  },
                   child: ListTile(
                     leading: Icon(Icons.privacy_tip),
                     title: Text('Privacy'),

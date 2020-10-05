@@ -1,24 +1,43 @@
+import 'package:driverapp/Screens/AccountSummary/TransferScreen.dart';
+import 'package:driverapp/Screens/AllTrips/CancelledTrips.dart';
+import 'package:driverapp/Screens/AllTrips/ChatScreen.dart';
+import 'package:driverapp/Screens/AllTrips/FinishedTrip.dart';
+import 'package:driverapp/Screens/AllTrips/ThankYouScreen.dart';
+import 'package:driverapp/Screens/Home/Home.dart';
 import 'package:driverapp/Screens/SplashScreen.dart';
-import 'package:driverapp/TripAlerts/gotRide.dart';
-import 'package:driverapp/TripAlerts/pickRide.dart';
-
-import 'Screens/Home/Home.dart';
+import 'package:driverapp/Screens/SupportScreen.dart';
+import 'package:driverapp/Screens/TermsCondition.dart';
+import 'package:driverapp/Screens/TripSummary/CompletedSummary.dart';
+import 'package:driverapp/Screens/TripSummary/Tripsummary.dart';
 import 'package:flutter/material.dart';
+import 'Screens/AccountSummary/AccountSummaryMain.dart';
+import 'Screens/AccountSummary/CommissionDue.dart';
+import 'Screens/AccountSummary/SettlementDue.dart';
+import 'Screens/AccountSummary/TotalIncome.dart';
+import 'Screens/SplashScreen.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'Flutter Demo',
-        debugShowCheckedModeBanner: false,
-        theme: ThemeData(
-          visualDensity: VisualDensity.adaptivePlatformDensity,
-        ),
-        home: SplashScreen());
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: 'Roboto',
+      ),
+      routes: {
+        ThankYouScreen.routeName: (ctx) => ThankYouScreen(),
+        TotalIncome.routeName: (ctx) => TotalIncome(),
+        CommissionDue.routeName: (ctx) => CommissionDue(),
+        SettlementDue.routeName: (ctx) => SettlementDue(),
+        TransferScreen.routeName: (ctx) => TransferScreen(),
+        CompletedSummary.routeName: (ctx) => CompletedSummary(),
+        TripSummary.routeName: (ctx) => TripSummary(),
+      },
+      home: SplashScreen(),
+    );
   }
 }
