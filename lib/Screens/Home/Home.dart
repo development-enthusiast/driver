@@ -1,5 +1,6 @@
 import 'dart:async';
 
+import 'package:driverapp/TripAlerts/gotRide.dart';
 import 'package:driverapp/utilities/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
@@ -67,6 +68,12 @@ class _HomeState extends State<Home> {
                   setState(() {
                     isChecked = !isChecked;
                   });
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => Gotride(),
+                    ),
+                  );
                 },
                 child: Padding(
                   padding: EdgeInsets.only(
@@ -123,7 +130,50 @@ class _HomeState extends State<Home> {
                 InkWell(
                   onTap: () {},
                   child: ListTile(
+                    leading: Icon(Icons.home),
                     title: Text('Home'),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: ListTile(
+                    leading: Icon(Icons.person),
+                    title: Text('Profile'),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: ListTile(
+                    leading: Icon(Icons.history),
+                    title: Text('Trip History'),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: ListTile(
+                    leading: Icon(Icons.account_balance),
+                    title: Text('Account Summary'),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: ListTile(
+                    leading: Icon(Icons.support),
+                    title: Text('Support & FAQ'),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: ListTile(
+                    leading: Icon(Icons.privacy_tip),
+                    title: Text('Privacy'),
+                  ),
+                ),
+                InkWell(
+                  onTap: () {},
+                  child: ListTile(
+                    leading: Icon(Icons.exit_to_app),
+                    title: Text('LogOut'),
                   ),
                 )
               ],

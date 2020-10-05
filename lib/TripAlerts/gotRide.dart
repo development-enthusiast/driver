@@ -1,9 +1,11 @@
 import 'dart:async';
 
+import 'package:driverapp/TripAlerts/pickRide.dart';
 import 'package:driverapp/utilities/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:slider_button/slider_button.dart';
+import 'package:fluid_slider/fluid_slider.dart';
 
 class Gotride extends StatefulWidget {
   @override
@@ -65,39 +67,43 @@ class _GotrideState extends State<Gotride> {
                       Center(
                         child: Padding(
                           padding: EdgeInsets.only(
-                              // left: SizeConfig.deviceWidth * 5,
-                              bottom: SizeConfig.deviceHeight * 35),
+                              top: SizeConfig.deviceWidth * 5,
+                              bottom: SizeConfig.deviceHeight * 15),
                           child: Text(
                             "You got a Ride now",
                             style: TextStyle(color: Colors.white),
                           ),
                         ),
                       ),
-                      Expanded(
-                          child: SliderButton(
+                      SliderButton(
                         action: () {
-                          ///Do something here
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Pickride(),
+                            ),
+                          );
                         },
                         label: Text(
-                          "Slide to cancel Match",
+                          "Slide to Ride",
                           style: TextStyle(
-                              color: Color(0xff4a4a4a),
+                              color: Colors.grey,
                               fontWeight: FontWeight.w500,
                               fontSize: 17),
                         ),
                         icon: Center(
                             child: Icon(
-                          Icons.power_settings_new,
-                          color: Colors.white,
+                          Icons.circle,
+                          color: Colors.green,
                           size: 40.0,
                           semanticLabel:
                               'Text to announce in accessibility modes',
                         )),
-                        buttonColor: Colors.blue,
-                        backgroundColor: Colors.green,
-                        highlightedColor: Colors.red,
-                        baseColor: Colors.amber,
-                      ))
+                        buttonColor: Colors.green,
+                        backgroundColor: Colors.grey,
+                        highlightedColor: Colors.green,
+                        baseColor: Colors.black,
+                      )
                     ],
                   ),
                 ));

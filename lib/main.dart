@@ -1,5 +1,6 @@
 import 'package:driverapp/Screens/SplashScreen.dart';
 import 'package:driverapp/TripAlerts/gotRide.dart';
+import 'package:driverapp/TripAlerts/pickRide.dart';
 
 import 'Screens/Home/Home.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +19,6 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
-        home: Gotride());
+        home: SplashScreen());
   }
 }

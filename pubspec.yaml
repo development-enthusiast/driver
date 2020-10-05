@@ -25,6 +25,7 @@ dependencies:
   http: ^0.12.0+1
   json_serializable: ^3.3.0
   slider_button:
+  fluid_slider: ^1.0.0
 
 dev_dependencies:
   flutter_test:
