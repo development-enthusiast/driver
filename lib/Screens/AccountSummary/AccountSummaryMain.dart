@@ -27,7 +27,7 @@ class _AccountSummaryMainState extends State<AccountSummaryMain> {
         color: Colors.black,
         fontWeight: FontWeight.w600,
       ),
-      radius: 80,
+      radius: 60,
     );
     PieChartSectionData _item2 = PieChartSectionData(
       color: Colors.redAccent,
@@ -37,7 +37,7 @@ class _AccountSummaryMainState extends State<AccountSummaryMain> {
         color: Colors.black,
         fontWeight: FontWeight.w600,
       ),
-      radius: 80,
+      radius: 60,
     );
     _section = [_item1, _item2];
     super.initState();
@@ -145,7 +145,7 @@ class _AccountSummaryMainState extends State<AccountSummaryMain> {
                                 width: pWidth * 0.02,
                               ),
                               Text(
-                                'Commission deducted',
+                                'Commission ',
                                 style: TextStyle(
                                   fontWeight: FontWeight.w600,
                                 ),
@@ -157,15 +157,20 @@ class _AccountSummaryMainState extends State<AccountSummaryMain> {
                     ),
                   ],
                 ),
-                Container(
-                  padding: EdgeInsets.all(pWidth * 0.01),
-                  width: pHeight / 4,
-                  height: pHeight / 4,
-                  child: PieChart(
-                    PieChartData(
-                      sectionsSpace: 5,
-                      sections: _section,
-                      borderData: FlBorderData(show: false),
+                Expanded(
+                  child: Container(
+                    padding: EdgeInsets.all(pWidth * 0.01),
+                    width: pHeight / 4,
+                    height: pHeight / 4,
+                    child: Padding(
+                      padding: EdgeInsets.only(right: 5),
+                      child: PieChart(
+                        PieChartData(
+                          sectionsSpace: 3,
+                          sections: _section,
+                          borderData: FlBorderData(show: false),
+                        ),
+                      ),
                     ),
                   ),
                 ),

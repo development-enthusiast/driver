@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:ui';
 
 import 'package:driverapp/TripAlerts/tripOTP.dart';
+import 'package:driverapp/Widgets/SendMessage.dart';
 import 'package:driverapp/utilities/size_config.dart';
 import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -316,7 +317,14 @@ class _PickrideState extends State<Pickride> {
                                             color: Colors.lightBlue,
                                             size: SizeConfig.deviceWidth * 8,
                                           ),
-                                          onPressed: null),
+                                          onPressed: () {
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      SendMessage()),
+                                            );
+                                          }),
                                     ),
                                   ]),
                             ),

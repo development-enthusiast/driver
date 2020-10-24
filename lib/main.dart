@@ -3,6 +3,8 @@ import 'package:driverapp/Screens/AllTrips/CancelledTrips.dart';
 import 'package:driverapp/Screens/AllTrips/ChatScreen.dart';
 import 'package:driverapp/Screens/AllTrips/FinishedTrip.dart';
 import 'package:driverapp/Screens/AllTrips/ThankYouScreen.dart';
+import 'package:driverapp/Screens/Auth/DocumentsSubmit.dart';
+import 'package:driverapp/Screens/Auth/UploadDocuments.dart';
 import 'package:driverapp/Screens/Home/Home.dart';
 import 'package:driverapp/Screens/SplashScreen.dart';
 import 'package:driverapp/Screens/SupportScreen.dart';
